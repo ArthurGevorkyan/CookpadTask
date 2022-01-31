@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		1FF36CE227A417C20032882D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FF36CE127A417C20032882D /* AppDelegate.swift */; };
 		1FF36CE427A417C20032882D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FF36CE327A417C20032882D /* SceneDelegate.swift */; };
-		1FF36CE627A417C20032882D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FF36CE527A417C20032882D /* ViewController.swift */; };
+		1FF36CE627A417C20032882D /* CookpadCollectionsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FF36CE527A417C20032882D /* CookpadCollectionsTableViewController.swift */; };
 		1FF36CE927A417C20032882D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1FF36CE727A417C20032882D /* Main.storyboard */; };
 		1FF36CEC27A417C20032882D /* CookpadTask.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 1FF36CEA27A417C20032882D /* CookpadTask.xcdatamodeld */; };
 		1FF36CEE27A417C30032882D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1FF36CED27A417C30032882D /* Assets.xcassets */; };
@@ -17,6 +17,35 @@
 		1FF36CFC27A417C40032882D /* CookpadTaskTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FF36CFB27A417C40032882D /* CookpadTaskTests.swift */; };
 		1FF36D0627A417C40032882D /* CookpadTaskUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FF36D0527A417C40032882D /* CookpadTaskUITests.swift */; };
 		1FF36D0827A417C40032882D /* CookpadTaskUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FF36D0727A417C40032882D /* CookpadTaskUITestsLaunchTests.swift */; };
+		1FF36D1627A439970032882D /* ApplicationDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FF36D1527A439970032882D /* ApplicationDataModel.swift */; };
+		1FF36D1A27A43B3F0032882D /* CookpadCoreDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FF36D1927A43B3F0032882D /* CookpadCoreDataModel.swift */; };
+		1FF36D1C27A442740032882D /* CookpadCoreDataInitialisationState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FF36D1B27A442740032882D /* CookpadCoreDataInitialisationState.swift */; };
+		1FF36D1E27A558BE0032882D /* RecipeCollection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FF36D1D27A558BE0032882D /* RecipeCollection.swift */; };
+		1FF36D2527A55F220032882D /* ManagedRecipeCollection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FF36D2427A55F220032882D /* ManagedRecipeCollection.swift */; };
+		1FF36D2727A565BE0032882D /* Recipe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FF36D2627A565BE0032882D /* Recipe.swift */; };
+		1FF36D2927A5667C0032882D /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FF36D2827A5667C0032882D /* User.swift */; };
+		1FF36D2B27A566DC0032882D /* Step.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FF36D2A27A566DC0032882D /* Step.swift */; };
+		1FF36D2D27A56A460032882D /* ManagedRecipe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FF36D2C27A56A460032882D /* ManagedRecipe.swift */; };
+		1FF36D2F27A56A720032882D /* ManagedUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FF36D2E27A56A720032882D /* ManagedUser.swift */; };
+		1FF36D3127A56AAA0032882D /* ManagedStep.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FF36D3027A56AAA0032882D /* ManagedStep.swift */; };
+		1FF36D3327A571EE0032882D /* Decoder+ManagedObjectContext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FF36D3227A571EE0032882D /* Decoder+ManagedObjectContext.swift */; };
+		1FF36D3627A578320032882D /* CollectionsAPIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FF36D3527A578320032882D /* CollectionsAPIService.swift */; };
+		1FF36D3827A5833B0032882D /* BaseAPIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FF36D3727A5833B0032882D /* BaseAPIService.swift */; };
+		1FF36D3B27A591960032882D /* ErrorReporter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FF36D3A27A591960032882D /* ErrorReporter.swift */; };
+		1FF36D4527A6BD830032882D /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FF36D4427A6BD830032882D /* AppCoordinator.swift */; };
+		1FF36D4827A6BE720032882D /* CookpadCollectionsStoryboardNavigationCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FF36D4727A6BE720032882D /* CookpadCollectionsStoryboardNavigationCoordinator.swift */; };
+		1FF36D4E27A6D89F0032882D /* CookpadCollectionsTableViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FF36D4D27A6D89F0032882D /* CookpadCollectionsTableViewModel.swift */; };
+		1FF36D5227A6F4E80032882D /* Observable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FF36D5127A6F4E80032882D /* Observable.swift */; };
+		1FF36D5427A7244A0032882D /* CookpadCollectionsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FF36D5327A7244A0032882D /* CookpadCollectionsTableViewCell.swift */; };
+		1FF36D5627A729060032882D /* CookpadCollectionsTableItemViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FF36D5527A729060032882D /* CookpadCollectionsTableItemViewModel.swift */; };
+		1FF36D5A27A7DB4C0032882D /* CookpadImageDownloadService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FF36D5927A7DB4C0032882D /* CookpadImageDownloadService.swift */; };
+		1FF36D5C27A7E1EB0032882D /* ImageDownloadService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FF36D5B27A7E1EB0032882D /* ImageDownloadService.swift */; };
+		1FF36D6527A81DE60032882D /* CookpadRecipesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FF36D6427A81DE60032882D /* CookpadRecipesTableViewController.swift */; };
+		1FF36D6727A825150032882D /* CookpadRecipesTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FF36D6627A825150032882D /* CookpadRecipesTableViewCell.swift */; };
+		1FF36D6927A826F30032882D /* CookpadRecipesTableViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FF36D6827A826F30032882D /* CookpadRecipesTableViewModel.swift */; };
+		1FF36D6B27A82AD00032882D /* CookpadRecipesTableItemViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FF36D6A27A82AD00032882D /* CookpadRecipesTableItemViewModel.swift */; };
+		1FF36D6D27A861690032882D /* ErrorCode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FF36D6C27A861680032882D /* ErrorCode.swift */; };
+		1FF36D6F27A864610032882D /* UIViewController+GenericAlert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FF36D6E27A864610032882D /* UIViewController+GenericAlert.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,7 +69,7 @@
 		1FF36CDE27A417C20032882D /* CookpadTask.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CookpadTask.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1FF36CE127A417C20032882D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1FF36CE327A417C20032882D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		1FF36CE527A417C20032882D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		1FF36CE527A417C20032882D /* CookpadCollectionsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CookpadCollectionsTableViewController.swift; sourceTree = "<group>"; };
 		1FF36CE827A417C20032882D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		1FF36CEB27A417C20032882D /* CookpadTask.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = CookpadTask.xcdatamodel; sourceTree = "<group>"; };
 		1FF36CED27A417C30032882D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -51,6 +80,35 @@
 		1FF36D0127A417C40032882D /* CookpadTaskUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CookpadTaskUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		1FF36D0527A417C40032882D /* CookpadTaskUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CookpadTaskUITests.swift; sourceTree = "<group>"; };
 		1FF36D0727A417C40032882D /* CookpadTaskUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CookpadTaskUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		1FF36D1527A439970032882D /* ApplicationDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApplicationDataModel.swift; sourceTree = "<group>"; };
+		1FF36D1927A43B3F0032882D /* CookpadCoreDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CookpadCoreDataModel.swift; sourceTree = "<group>"; };
+		1FF36D1B27A442740032882D /* CookpadCoreDataInitialisationState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CookpadCoreDataInitialisationState.swift; sourceTree = "<group>"; };
+		1FF36D1D27A558BE0032882D /* RecipeCollection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeCollection.swift; sourceTree = "<group>"; };
+		1FF36D2427A55F220032882D /* ManagedRecipeCollection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ManagedRecipeCollection.swift; sourceTree = "<group>"; };
+		1FF36D2627A565BE0032882D /* Recipe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Recipe.swift; sourceTree = "<group>"; };
+		1FF36D2827A5667C0032882D /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		1FF36D2A27A566DC0032882D /* Step.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Step.swift; sourceTree = "<group>"; };
+		1FF36D2C27A56A460032882D /* ManagedRecipe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ManagedRecipe.swift; sourceTree = "<group>"; };
+		1FF36D2E27A56A720032882D /* ManagedUser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ManagedUser.swift; sourceTree = "<group>"; };
+		1FF36D3027A56AAA0032882D /* ManagedStep.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ManagedStep.swift; sourceTree = "<group>"; };
+		1FF36D3227A571EE0032882D /* Decoder+ManagedObjectContext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Decoder+ManagedObjectContext.swift"; sourceTree = "<group>"; };
+		1FF36D3527A578320032882D /* CollectionsAPIService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionsAPIService.swift; sourceTree = "<group>"; };
+		1FF36D3727A5833B0032882D /* BaseAPIService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseAPIService.swift; sourceTree = "<group>"; };
+		1FF36D3A27A591960032882D /* ErrorReporter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorReporter.swift; sourceTree = "<group>"; };
+		1FF36D4427A6BD830032882D /* AppCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
+		1FF36D4727A6BE720032882D /* CookpadCollectionsStoryboardNavigationCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CookpadCollectionsStoryboardNavigationCoordinator.swift; sourceTree = "<group>"; };
+		1FF36D4D27A6D89F0032882D /* CookpadCollectionsTableViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CookpadCollectionsTableViewModel.swift; sourceTree = "<group>"; };
+		1FF36D5127A6F4E80032882D /* Observable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Observable.swift; sourceTree = "<group>"; };
+		1FF36D5327A7244A0032882D /* CookpadCollectionsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CookpadCollectionsTableViewCell.swift; sourceTree = "<group>"; };
+		1FF36D5527A729060032882D /* CookpadCollectionsTableItemViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CookpadCollectionsTableItemViewModel.swift; sourceTree = "<group>"; };
+		1FF36D5927A7DB4C0032882D /* CookpadImageDownloadService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CookpadImageDownloadService.swift; sourceTree = "<group>"; };
+		1FF36D5B27A7E1EB0032882D /* ImageDownloadService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageDownloadService.swift; sourceTree = "<group>"; };
+		1FF36D6427A81DE60032882D /* CookpadRecipesTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CookpadRecipesTableViewController.swift; sourceTree = "<group>"; };
+		1FF36D6627A825150032882D /* CookpadRecipesTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CookpadRecipesTableViewCell.swift; sourceTree = "<group>"; };
+		1FF36D6827A826F30032882D /* CookpadRecipesTableViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CookpadRecipesTableViewModel.swift; sourceTree = "<group>"; };
+		1FF36D6A27A82AD00032882D /* CookpadRecipesTableItemViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CookpadRecipesTableItemViewModel.swift; sourceTree = "<group>"; };
+		1FF36D6C27A861680032882D /* ErrorCode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorCode.swift; sourceTree = "<group>"; };
+		1FF36D6E27A864610032882D /* UIViewController+GenericAlert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+GenericAlert.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,14 +159,17 @@
 		1FF36CE027A417C20032882D /* CookpadTask */ = {
 			isa = PBXGroup;
 			children = (
+				1FF36D4927A6D82D0032882D /* Scenes */,
+				1FF36D4227A6BD5E0032882D /* Coordinators */,
+				1FF36D2027A559C90032882D /* Entities */,
+				1FF36D3C27A5919F0032882D /* Miscellaneous */,
+				1FF36D3427A577910032882D /* APIIntegration */,
+				1FF36D1427A438BB0032882D /* ApplicationModel */,
 				1FF36CE127A417C20032882D /* AppDelegate.swift */,
 				1FF36CE327A417C20032882D /* SceneDelegate.swift */,
-				1FF36CE527A417C20032882D /* ViewController.swift */,
-				1FF36CE727A417C20032882D /* Main.storyboard */,
 				1FF36CED27A417C30032882D /* Assets.xcassets */,
 				1FF36CEF27A417C30032882D /* LaunchScreen.storyboard */,
 				1FF36CF227A417C30032882D /* Info.plist */,
-				1FF36CEA27A417C20032882D /* CookpadTask.xcdatamodeld */,
 			);
 			path = CookpadTask;
 			sourceTree = "<group>";
@@ -128,6 +189,208 @@
 				1FF36D0727A417C40032882D /* CookpadTaskUITestsLaunchTests.swift */,
 			);
 			path = CookpadTaskUITests;
+			sourceTree = "<group>";
+		};
+		1FF36D1427A438BB0032882D /* ApplicationModel */ = {
+			isa = PBXGroup;
+			children = (
+				1FF36D3E27A6A3510032882D /* Contracts */,
+				1FF36D3F27A6A3A00032882D /* Specialisations */,
+			);
+			path = ApplicationModel;
+			sourceTree = "<group>";
+		};
+		1FF36D1827A43B180032882D /* Specialisations */ = {
+			isa = PBXGroup;
+			children = (
+				1FF36D2127A559EA0032882D /* DecodableCoreDataManagedObjects */,
+			);
+			path = Specialisations;
+			sourceTree = "<group>";
+		};
+		1FF36D2027A559C90032882D /* Entities */ = {
+			isa = PBXGroup;
+			children = (
+				1FF36D3D27A6A31A0032882D /* Contracts */,
+				1FF36D1827A43B180032882D /* Specialisations */,
+			);
+			path = Entities;
+			sourceTree = "<group>";
+		};
+		1FF36D2127A559EA0032882D /* DecodableCoreDataManagedObjects */ = {
+			isa = PBXGroup;
+			children = (
+				1FF36D2427A55F220032882D /* ManagedRecipeCollection.swift */,
+				1FF36D2C27A56A460032882D /* ManagedRecipe.swift */,
+				1FF36D2E27A56A720032882D /* ManagedUser.swift */,
+				1FF36D3027A56AAA0032882D /* ManagedStep.swift */,
+			);
+			path = DecodableCoreDataManagedObjects;
+			sourceTree = "<group>";
+		};
+		1FF36D3427A577910032882D /* APIIntegration */ = {
+			isa = PBXGroup;
+			children = (
+				1FF36D3927A589E60032882D /* Services */,
+			);
+			path = APIIntegration;
+			sourceTree = "<group>";
+		};
+		1FF36D3927A589E60032882D /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				1FF36D5827A7DB0C0032882D /* Images */,
+				1FF36D5727A7DB000032882D /* API */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		1FF36D3C27A5919F0032882D /* Miscellaneous */ = {
+			isa = PBXGroup;
+			children = (
+				1FF36D3227A571EE0032882D /* Decoder+ManagedObjectContext.swift */,
+				1FF36D3A27A591960032882D /* ErrorReporter.swift */,
+				1FF36D5127A6F4E80032882D /* Observable.swift */,
+				1FF36D6C27A861680032882D /* ErrorCode.swift */,
+				1FF36D6E27A864610032882D /* UIViewController+GenericAlert.swift */,
+			);
+			path = Miscellaneous;
+			sourceTree = "<group>";
+		};
+		1FF36D3D27A6A31A0032882D /* Contracts */ = {
+			isa = PBXGroup;
+			children = (
+				1FF36D1D27A558BE0032882D /* RecipeCollection.swift */,
+				1FF36D2627A565BE0032882D /* Recipe.swift */,
+				1FF36D2827A5667C0032882D /* User.swift */,
+				1FF36D2A27A566DC0032882D /* Step.swift */,
+			);
+			path = Contracts;
+			sourceTree = "<group>";
+		};
+		1FF36D3E27A6A3510032882D /* Contracts */ = {
+			isa = PBXGroup;
+			children = (
+				1FF36D1527A439970032882D /* ApplicationDataModel.swift */,
+			);
+			path = Contracts;
+			sourceTree = "<group>";
+		};
+		1FF36D3F27A6A3A00032882D /* Specialisations */ = {
+			isa = PBXGroup;
+			children = (
+				1FF36CEA27A417C20032882D /* CookpadTask.xcdatamodeld */,
+				1FF36D1927A43B3F0032882D /* CookpadCoreDataModel.swift */,
+				1FF36D1B27A442740032882D /* CookpadCoreDataInitialisationState.swift */,
+			);
+			path = Specialisations;
+			sourceTree = "<group>";
+		};
+		1FF36D4227A6BD5E0032882D /* Coordinators */ = {
+			isa = PBXGroup;
+			children = (
+				1FF36D4327A6BD6F0032882D /* Contracts */,
+				1FF36D4627A6BE280032882D /* Specialisations */,
+			);
+			path = Coordinators;
+			sourceTree = "<group>";
+		};
+		1FF36D4327A6BD6F0032882D /* Contracts */ = {
+			isa = PBXGroup;
+			children = (
+				1FF36D4427A6BD830032882D /* AppCoordinator.swift */,
+			);
+			path = Contracts;
+			sourceTree = "<group>";
+		};
+		1FF36D4627A6BE280032882D /* Specialisations */ = {
+			isa = PBXGroup;
+			children = (
+				1FF36D4727A6BE720032882D /* CookpadCollectionsStoryboardNavigationCoordinator.swift */,
+			);
+			path = Specialisations;
+			sourceTree = "<group>";
+		};
+		1FF36D4927A6D82D0032882D /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				1FF36CE727A417C20032882D /* Main.storyboard */,
+				1FF36D6127A81DA70032882D /* RecipesTableScene */,
+				1FF36D4A27A6D8350032882D /* CollectionsTableScene */,
+			);
+			path = Scenes;
+			sourceTree = "<group>";
+		};
+		1FF36D4A27A6D8350032882D /* CollectionsTableScene */ = {
+			isa = PBXGroup;
+			children = (
+				1FF36D4B27A6D8610032882D /* Views */,
+				1FF36D4C27A6D8730032882D /* ViewModels */,
+			);
+			path = CollectionsTableScene;
+			sourceTree = "<group>";
+		};
+		1FF36D4B27A6D8610032882D /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				1FF36CE527A417C20032882D /* CookpadCollectionsTableViewController.swift */,
+				1FF36D5327A7244A0032882D /* CookpadCollectionsTableViewCell.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		1FF36D4C27A6D8730032882D /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				1FF36D4D27A6D89F0032882D /* CookpadCollectionsTableViewModel.swift */,
+				1FF36D5527A729060032882D /* CookpadCollectionsTableItemViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		1FF36D5727A7DB000032882D /* API */ = {
+			isa = PBXGroup;
+			children = (
+				1FF36D3727A5833B0032882D /* BaseAPIService.swift */,
+				1FF36D3527A578320032882D /* CollectionsAPIService.swift */,
+			);
+			path = API;
+			sourceTree = "<group>";
+		};
+		1FF36D5827A7DB0C0032882D /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				1FF36D5B27A7E1EB0032882D /* ImageDownloadService.swift */,
+				1FF36D5927A7DB4C0032882D /* CookpadImageDownloadService.swift */,
+			);
+			path = Images;
+			sourceTree = "<group>";
+		};
+		1FF36D6127A81DA70032882D /* RecipesTableScene */ = {
+			isa = PBXGroup;
+			children = (
+				1FF36D6227A81DB30032882D /* Views */,
+				1FF36D6327A81DBA0032882D /* ViewModels */,
+			);
+			path = RecipesTableScene;
+			sourceTree = "<group>";
+		};
+		1FF36D6227A81DB30032882D /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				1FF36D6427A81DE60032882D /* CookpadRecipesTableViewController.swift */,
+				1FF36D6627A825150032882D /* CookpadRecipesTableViewCell.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		1FF36D6327A81DBA0032882D /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				1FF36D6827A826F30032882D /* CookpadRecipesTableViewModel.swift */,
+				1FF36D6A27A82AD00032882D /* CookpadRecipesTableItemViewModel.swift */,
+			);
+			path = ViewModels;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -262,9 +525,38 @@
 			buildActionMask = 2147483647;
 			files = (
 				1FF36CEC27A417C20032882D /* CookpadTask.xcdatamodeld in Sources */,
-				1FF36CE627A417C20032882D /* ViewController.swift in Sources */,
+				1FF36D5627A729060032882D /* CookpadCollectionsTableItemViewModel.swift in Sources */,
+				1FF36D2527A55F220032882D /* ManagedRecipeCollection.swift in Sources */,
+				1FF36D6D27A861690032882D /* ErrorCode.swift in Sources */,
+				1FF36D6B27A82AD00032882D /* CookpadRecipesTableItemViewModel.swift in Sources */,
+				1FF36D5A27A7DB4C0032882D /* CookpadImageDownloadService.swift in Sources */,
+				1FF36CE627A417C20032882D /* CookpadCollectionsTableViewController.swift in Sources */,
+				1FF36D6727A825150032882D /* CookpadRecipesTableViewCell.swift in Sources */,
+				1FF36D1C27A442740032882D /* CookpadCoreDataInitialisationState.swift in Sources */,
+				1FF36D3127A56AAA0032882D /* ManagedStep.swift in Sources */,
+				1FF36D1A27A43B3F0032882D /* CookpadCoreDataModel.swift in Sources */,
+				1FF36D3B27A591960032882D /* ErrorReporter.swift in Sources */,
+				1FF36D2B27A566DC0032882D /* Step.swift in Sources */,
+				1FF36D6927A826F30032882D /* CookpadRecipesTableViewModel.swift in Sources */,
+				1FF36D2F27A56A720032882D /* ManagedUser.swift in Sources */,
 				1FF36CE227A417C20032882D /* AppDelegate.swift in Sources */,
+				1FF36D2D27A56A460032882D /* ManagedRecipe.swift in Sources */,
+				1FF36D5C27A7E1EB0032882D /* ImageDownloadService.swift in Sources */,
+				1FF36D5427A7244A0032882D /* CookpadCollectionsTableViewCell.swift in Sources */,
+				1FF36D4E27A6D89F0032882D /* CookpadCollectionsTableViewModel.swift in Sources */,
+				1FF36D6F27A864610032882D /* UIViewController+GenericAlert.swift in Sources */,
+				1FF36D1E27A558BE0032882D /* RecipeCollection.swift in Sources */,
+				1FF36D4527A6BD830032882D /* AppCoordinator.swift in Sources */,
+				1FF36D3827A5833B0032882D /* BaseAPIService.swift in Sources */,
 				1FF36CE427A417C20032882D /* SceneDelegate.swift in Sources */,
+				1FF36D1627A439970032882D /* ApplicationDataModel.swift in Sources */,
+				1FF36D3627A578320032882D /* CollectionsAPIService.swift in Sources */,
+				1FF36D2727A565BE0032882D /* Recipe.swift in Sources */,
+				1FF36D3327A571EE0032882D /* Decoder+ManagedObjectContext.swift in Sources */,
+				1FF36D2927A5667C0032882D /* User.swift in Sources */,
+				1FF36D6527A81DE60032882D /* CookpadRecipesTableViewController.swift in Sources */,
+				1FF36D4827A6BE720032882D /* CookpadCollectionsStoryboardNavigationCoordinator.swift in Sources */,
+				1FF36D5227A6F4E80032882D /* Observable.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

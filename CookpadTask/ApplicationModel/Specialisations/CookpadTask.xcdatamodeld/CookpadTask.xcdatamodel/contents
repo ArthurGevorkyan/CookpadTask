@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="19574" systemVersion="21D49" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="ManagedRecipe" representedClassName=".ManagedRecipe" syncable="YES" codeGenerationType="category">
+        <attribute name="id" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="imageURL" optional="YES" attributeType="String"/>
+        <attribute name="ingredientsStorage" attributeType="Transformable" valueTransformerName="NSSecureUnarchiveFromData" customClassName="[String]"/>
+        <attribute name="publishedAtStorage" attributeType="String" defaultValueString=""/>
+        <attribute name="storyStorage" attributeType="String" defaultValueString=""/>
+        <attribute name="titleStorage" attributeType="String" defaultValueString=""/>
+        <relationship name="collectionRelationship" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="ManagedRecipeCollection" inverseName="recipesRelationship" inverseEntity="ManagedRecipeCollection"/>
+        <relationship name="stepsRelationship" optional="YES" toMany="YES" deletionRule="Cascade" ordered="YES" destinationEntity="ManagedStep"/>
+        <relationship name="userRelationship" optional="YES" maxCount="1" deletionRule="Cascade" destinationEntity="ManagedUser"/>
+        <uniquenessConstraints>
+            <uniquenessConstraint>
+                <constraint value="id"/>
+            </uniquenessConstraint>
+        </uniquenessConstraints>
+    </entity>
+    <entity name="ManagedRecipeCollection" representedClassName=".ManagedRecipeCollection" syncable="YES" codeGenerationType="category">
+        <attribute name="id" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="previewImageURLsStorage" attributeType="Transformable" valueTransformerName="NSSecureUnarchiveFromData" customClassName="[String]"/>
+        <attribute name="recipeCount" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="textDescriptionStorage" attributeType="String" defaultValueString=""/>
+        <attribute name="titleStorage" attributeType="String" defaultValueString=""/>
+        <relationship name="recipesRelationship" optional="YES" toMany="YES" deletionRule="Cascade" ordered="YES" destinationEntity="ManagedRecipe" inverseName="collectionRelationship" inverseEntity="ManagedRecipe"/>
+        <uniquenessConstraints>
+            <uniquenessConstraint>
+                <constraint value="id"/>
+            </uniquenessConstraint>
+        </uniquenessConstraints>
+    </entity>
+    <entity name="ManagedStep" representedClassName=".ManagedStep" syncable="YES" codeGenerationType="category">
+        <attribute name="imageURLsStorage" attributeType="Transformable" valueTransformerName="NSSecureUnarchiveFromData" customClassName="[String]"/>
+        <attribute name="textDescriptionStorage" attributeType="String" defaultValueString=""/>
+    </entity>
+    <entity name="ManagedUser" representedClassName=".ManagedUser" syncable="YES" codeGenerationType="category">
+        <attribute name="imageURL" optional="YES" attributeType="String"/>
+        <attribute name="nameStorage" attributeType="String" defaultValueString=""/>
+    </entity>
+    <elements>
+        <element name="ManagedRecipe" positionX="-54" positionY="27" width="128" height="164"/>
+        <element name="ManagedRecipeCollection" positionX="-63" positionY="-18" width="128" height="119"/>
+        <element name="ManagedStep" positionX="-18" positionY="99" width="128" height="59"/>
+        <element name="ManagedUser" positionX="-36" positionY="72" width="128" height="59"/>
+    </elements>
+</model>

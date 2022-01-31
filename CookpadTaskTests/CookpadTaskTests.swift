@@ -2,7 +2,7 @@
 //  CookpadTaskTests.swift
 //  CookpadTaskTests
 //
-//  Created by Exporent on 28.01.22.
+//  Created by Arthur Gevorkyan on 28.01.22.
 //
 
 import XCTest
